@@ -1,0 +1,42 @@
+**Brief introduction
+===========================================================================
+  In this project, we have to merge a few txt files about human activity into one file.
+Following is the way and step how I do so.
+
+**Cleaning Step
+===============================================================================
+  I decide to deal the inertial signal files first. Including two folders: text and train
+Following step apply on both folders. There are nine files in each folder, as following:
+--body_acc_x¡Bbody_acc_y¡Bbody_acc_z, body_gyro_x ~ body_gyro_z, total_acc_x ~ total_acc_z.
+I summarize the file, variable can be represented by their mean and standard deviation.
+Then mix these nine files¡Beighteen variables into one file called: Signal
+
+  After deal with signal, there are three files: X¡BY and subject. We also summarize their
+variables by mean and standard deviation. We creat a new label variable called: Test_Train,
+to tell where the sample come from after combining.
+
+**Data Information
+===============================================================================
+1.Test_Train: label to tell test or train data. 1:test, 2:train
+2.Subject: The subject who performed the activity for each window sample. Its range is from 1 to 30.
+3.labels: Train or test labels
+4.Mean: Mean for test or train set
+5.S.D: Standard deviation for test or train
+6.body_acc_x_mean: The mean of acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'.
+7.body_acc_x_sd: The standard deviation of acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'.
+8.body_acc_y_mean:The mean of acceleration signal from the smartphone accelerometer Y axis in standard gravity units 'g'.
+9.body_acc_y_sd: The standard deviation of acceleration signal from the smartphone accelerometer Y axis in standard gravity units 'g'.
+10.body_acc_z_mean:The mean of acceleration signal from the smartphone accelerometer Z axis in standard gravity units 'g'.
+11.body_acc_z_sd: The standard deviation of acceleration signal from the smartphone accelerometer Z axis in standard gravity units 'g'.
+12.body_gyro_x_mean: The mean of angular velocity vector measured by the gyroscope.
+13.body_gyro_x_sd: The standard deviation of angular velocity vector measured by the gyroscope.                    
+14.body_gyro_y_mean: The mean of angular velocity vector measured by the gyroscope.
+15.body_gyro_y_sd: The standard deviation of angular velocity vector measured by the gyroscope.
+16.body_gyro_z_mean: The mean of angular velocity vector measured by the gyroscope.
+17.body_gyro_z_sd: The standard deviation of angular velocity vector measured by the gyroscope.
+18.total_acc_x_mean: The mean of bbody acceleration signal obtained by subtracting the gravity from the total acceleration.             
+19.total_acc_x_sd: The standard deviation of bbody acceleration signal obtained by subtracting the gravity from the total acceleration.
+20.total_acc_y_mean: The mean of bbody acceleration signal obtained by subtracting the gravity from the total acceleration.
+21.total_acc_y_sd: The standard deviation of bbody acceleration signal obtained by subtracting the gravity from the total acceleration.
+22.total_acc_z_mean: The mean of bbody acceleration signal obtained by subtracting the gravity from the total acceleration.
+23.total_acc_z_sd: The standard deviation of bbody acceleration signal obtained by subtracting the gravity from the total acceleration.
